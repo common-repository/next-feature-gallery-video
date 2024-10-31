@@ -1,0 +1,33 @@
+/*Global css start here*/
+/*Switch Section*/
+.themedev-switch-input { opacity: 0; z-index: 99; position: absolute; }
+
+.themedev-checkbox-switch { cursor: pointer; margin-bottom: 0px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: inline-block !important; line-height: 19px !important; width: auto  !important; clear: both; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; font-weight: 700; }
+
+.themedev-checkbox-switch .themedev-label-switch { position: relative; overflow: hidden; width: 52px; height: 26px; display: inline-block; margin-left: 10px; cursor: pointer; }
+
+.themedev-checkbox-switch .themedev-label-switch:after, .themedev-checkbox-switch .themedev-label-switch:before { position: absolute; -webkit-transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); -o-transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); -moz-transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); font-weight: 700; font-size: .6875rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.themedev-checkbox-switch .themedev-label-switch:before { content: attr(data-inactive); top: 0; left: 0; width: 100%; height: 100%; background-color: #FFFFFF; border: #324aff solid 1px; border-radius: 26px; text-indent: 24px; }
+
+.themedev-switch-input:checked ~ .themedev-checkbox-switch .themedev-label-switch:before { border-color: #f2295b; text-indent: 52px; }
+
+.themedev-checkbox-switch .themedev-label-switch:after { position: absolute; top: 4px; left: 4px; display: block; content: attr(data-active); width: 18px; height: 18px; background-color: #324aff; border-radius: 100%; -webkit-transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); -o-transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); text-indent: -22px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.themedev-switch-input:checked ~ .themedev-checkbox-switch .themedev-label-switch:after { left: 30px; background-color: #f2295b; color: #f2295b; }
+
+.next-portfolio-gallery { padding-left: 0; margin-left: 0; margin-bottom: 0; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+
+.next-portfolio-gallery > li { list-style: none; }
+
+.next-portfolio-gallery > li:not(:last-child) { padding-right: 15px; }
+
+.next-portfolio-gallery > li > a { display: block; }
+
+.next-portfolio-gallery > li > a img { border: 1px solid #ccc; }
+
+.wfp-post-image { margin-bottom: 15px; }
+
+.wfp-post-image .featured-video > iframe { display: block; }
+
+.wfp-entry-thumbnail { margin-bottom: 40px; }

@@ -1,0 +1,213 @@
+/*
+* Default modal design
+*/
+@-webkit-keyframes show-fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes show-fadein {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } 
+}
+
+@-webkit-keyframes hide-fadeout {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } 
+}
+
+@keyframes hide-fadeout {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } 
+}
+
+/* show animation */
+@-webkit-keyframes show-animation {
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); 
+	} 
+}
+
+@keyframes show-animation {
+  0% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); 
+	} 
+}
+
+/* hide animation */
+@-webkit-keyframes hide-animation {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  100% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0;
+	} 
+}
+
+@keyframes hide-animation {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  100% {
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+    opacity: 0; 
+	} 
+}
+
+.next-modal-dialog {
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  top: 50px;
+  left: 50%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 9999;
+  max-width: 700px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  -webkit-box-shadow: 17.678px 17.678px 90px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 17.678px 17.678px 90px 0px rgba(0, 0, 0, 0.07); 
+}
+
+.next-modal-dialog.is-open {
+  -webkit-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 1;
+  visibility: visible;
+  overflow-x: hidden !important;
+  overflow-y: auto !important; 
+}
+
+.next-backdrop {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -webkit-transition: all 300ms ease-in;
+  -o-transition: all 300ms ease-in;
+  transition: all 300ms ease-in;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden; 
+}
+
+.next-backdrop.is-open {
+  -webkit-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  opacity: 1;
+  visibility: visible; 
+  max-width: 100% !important;
+}
+
+.next-modal-content {
+  overflow: hidden; 
+ }
+.next-modal-header {
+    border-bottom: 1px solid #f7f7f7;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.03);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.03);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.next-modal-header > .tabHeader {
+    float: left;
+	padding: 21px 0;
+}
+.next-btn {
+    cursor: pointer;
+    border: 0px;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    -webkit-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    -o-transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out, -webkit-box-shadow .15s ease-in-out;
+    color: #fff;
+    background-color: #0073aa;
+    text-decoration: none;
+}
+.next-modal-header > .next-btn {
+    float: right;
+    color: #fa3f6b;
+    background: transparent;
+    margin-top: 21px;
+}
+
+.next-modal-body {
+  padding: 20px; 
+}
+.clear-both::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+@media only screen and (min-width: 991px) {
+    .next-modal-body {
+      max-height: calc(100vh - 210px);
+      overflow-y: auto; 
+	} 
+}
+
+.next-modal-footer {
+  padding: 20px;
+  border-top: 1px solid #f5f5f5;
+  padding-bottom: 40px; 
+}
+
+
+.next-btn.btn-special {
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: #0085ba;
+    -webkit-box-shadow: 0px 10px 15px 0px rgba(0, 133, 186, 0.3);
+    box-shadow: 0px 10px 15px 0px rgba(0, 133, 186, 0.3);
+    padding: 6px 32px;
+}
+.next-btn.btn-special.small {
+    padding: 9px 20px;
+}
+/*
+* Default modal design end
+*/

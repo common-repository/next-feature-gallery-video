@@ -1,0 +1,88 @@
+/*Global css start here*/
+/*Switch Section*/
+.themedev-switch-input { opacity: 0; z-index: 99; position: absolute; }
+
+.themedev-checkbox-switch { cursor: pointer; margin-bottom: 0px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: inline-block !important; line-height: 19px !important; width: auto  !important; clear: both; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; font-weight: 700; }
+
+.themedev-checkbox-switch .themedev-label-switch { position: relative; overflow: hidden; width: 52px; height: 26px; display: inline-block; margin-left: 0px; cursor: pointer; }
+
+.themedev-checkbox-switch .themedev-label-switch:after, .themedev-checkbox-switch .themedev-label-switch:before { position: absolute; -webkit-transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); -o-transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); -moz-transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); font-weight: 700; font-size: .6875rem; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.themedev-checkbox-switch .themedev-label-switch:before { content: attr(data-inactive); top: 0; left: 0; width: 100%; height: 100%; background-color: #FFFFFF; border: #0073aa solid 1px; border-radius: 26px; text-indent: 24px; }
+
+.themedev-switch-input:checked ~ .themedev-checkbox-switch .themedev-label-switch:before { border-color: #f2295b; text-indent: 52px; }
+
+.themedev-checkbox-switch .themedev-label-switch:after { position: absolute; top: 4px; left: 4px; display: block; content: attr(data-active); width: 18px; height: 18px; background-color: #0073aa; border-radius: 100%; -webkit-transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); -o-transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); transition: all 0.3s cubic-bezier(0.22, 0.61, 0.36, 1); text-indent: -22px; display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.themedev-switch-input:checked ~ .themedev-checkbox-switch .themedev-label-switch:after { left: 30px; background-color: #f2295b; color: #f2295b; }
+
+/*End switch button*/
+.themeDev-featured-body .settings-content { padding: 10px; display: block; }
+
+.themeDev-featured-body .settings-content h3 { font-size: 21px; color: #0073aa; }
+
+.themeDev-featured-body .settings-content h4 { font-size: 17px; color: #f2295b; }
+
+.themeDev-featured-body .settings-content .sub-headding { font-size: 13px; color: #bdbaba; }
+
+.themeDev-featured-body .settings-content .themeDev-form { padding: 5px 0px; }
+
+.themeDev-featured-body .settings-content .themeDev-form .flex-form { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.themeDev-featured-body .settings-content .themeDev-form .left-div { -webkit-box-flex: 0; -ms-flex: 0 0 23%; flex: 0 0 23%; margin-right: 10px; }
+
+.themeDev-featured-body .settings-content .themeDev-form .right-div { -webkit-box-flex: 0; -ms-flex: 0 0 75%; flex: 0 0 75%; }
+
+.themeDev-featured-body .settings-content .themeDev-form label.block-label, .themeDev-featured-body .settings-content .themeDev-form label.inline-label, .themeDev-featured-body .settings-content .themeDev-form label.themedev-checkbox-switch { display: block; font-weight: bold; line-height: 2em; }
+
+.themeDev-featured-body .settings-content .themeDev-form label.inline-label { display: inline-block; }
+
+.themeDev-featured-body .settings-content .themeDev-form span.themedev-document-info { color: #bdbaba; font-style: italic; font-size: 12px; }
+
+.themeDev-featured-body .settings-content .themeDev-form span.themedev-document-info.block { display: block; }
+
+.themeDev-featured-body .settings-content .themeDev-form input.themedev-text-input, .themeDev-featured-body .settings-content .themeDev-form select.themedev-text-input { border-radius: 3px; -webkit-border-radius: 3px; -ms-border-radius: 3px; border: 1px solid rgba(0, 0, 0, 0.05); -webkit-box-shadow: 0px 6px 20px 0px rgba(194, 204, 222, 0.3); box-shadow: 0px 6px 20px 0px rgba(194, 204, 222, 0.3); background-color: #fff; color: #32373c; outline: 0; -webkit-transition: 50ms border-color ease-in-out; -o-transition: 50ms border-color ease-in-out; transition: 50ms border-color ease-in-out; display: block; width: 100%; height: 34px; padding: 6px 12px; font-size: 14px; line-height: 1.42857143; }
+
+.themeDev-featured-body .settings-content .themeDev-form input.themedev-text-input.inline-block, .themeDev-featured-body .settings-content .themeDev-form select.themedev-text-input.inline-block { display: inline-block; width: 100%; max-width: 500px; }
+
+.themeDev-featured-body .settings-content .themeDev-form .themedev-submit { background-color: #0073aa; color: #FFFFFF; max-width: none; padding: 9px 20px; font-size: 14px; line-height: 14px; border-radius: 0px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; display: inline-block; border: solid 2px transparent; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: transparent; -webkit-font-smoothing: antialiased; text-align: center; vertical-align: middle; cursor: pointer; white-space: nowrap; background-image: none; -webkit-transition: all 0.15s ease; -o-transition: all 0.15s ease; -moz-transition: all 0.15s ease; transition: all 0.15s ease; -webkit-box-shadow: 0 1px 6px rgba(57, 73, 76, 0.35); box-shadow: 0 1px 6px rgba(57, 73, 76, 0.35); }
+
+.themeDev-featured-body .settings-content .themeDev-form .sub-label ul.social-services-list { list-style: none; margin-left: 20px; }
+
+.themeDev-featured-body .settings-content .themeDev-form.nx-border-bottom { /*border-bottom: 1px solid #ccc; margin-bottom: 5px;*/ }
+
+.themeDev-featured-body .settings-content .themeDev-form .next-custom-post-ul li { display: inline-block; width: 24%; }
+
+.themeDev-featured-body .support-content { padding: 10px; display: block; }
+
+.themeDev-featured-body .support-content h3 { font-size: 21px; color: #0073aa; }
+
+.themeDev-featured-body .nx-hide-target { display: none; }
+
+.themeDev-featured-body .nx-show-target { display: block; }
+
+/*Global css end here*/
+/* Tab*/
+.themeDev-featured-body { display: block; background-color: #fff; -webkit-box-shadow: 1px 5px 17px #ccc; box-shadow: 1px 5px 17px #ccc; margin: 20px 14px; }
+
+.themeDev-featured-body .header-settings { background-color: #0073aa; padding: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.themeDev-featured-body .header-settings figure { display: inline-block; padding: 4px; margin: 0px; }
+
+.themeDev-featured-body .header-settings figure img { width: 100px; }
+
+.themeDev-featured-body .header-settings h2.title { display: inline-block; font-size: 24px; color: #FFFFFF; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
+
+.themeDev-featured-body .nav-settings { background-color: #fff; }
+
+.themeDev-featured-body .nav-settings ul.nav-tab-wrapper { border-bottom: 1px solid #0073aa; padding-top: 0px; }
+
+.themeDev-featured-body .nav-settings ul.nav-tab-wrapper li { margin-bottom: 0px; float: none; }
+
+.themeDev-featured-body .nav-settings ul.nav-tab-wrapper li a.nav-tab { background-color: #0073aa; color: #FFFFFF; border: unset; margin-left: 0; margin-bottom: -2px; }
+
+.themeDev-featured-body .nav-settings ul.nav-tab-wrapper li a.nav-tab:fisrt-child { margin-left: .5em; }
+
+.themeDev-featured-body .nav-settings ul.nav-tab-wrapper li a.nav-tab-active, .themeDev-featured-body .nav-settings ul.nav-tab-wrapper li a.nav-tab-active:focus, .themeDev-featured-body .nav-settings ul.nav-tab-wrapper li a.nav-tab-active:focus:active, .themeDev-featured-body .nav-settings ul.nav-tab-wrapper li a.nav-tab-active:hover { border-bottom: 2px solid #fff; background: #fff; color: #000; }
+
+/*Repeater Filed*/
